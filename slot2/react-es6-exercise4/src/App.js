@@ -6,12 +6,17 @@ import Greeting from './components/Greeting';
 import JSXText from './components/JSXText';
 import CourseList from './components/CourseList';
 import RetailCompanies from './components/RetailCompanies';
-import { runES6Exercises , companiesData} from './utils/es6Logic';
-
+import { companiesData, runArrayMethods } from './utils/arrayMethods';
+import { runES6Functions } from './utils/es6Logic';
+import { runOOPClasses } from './utils/oopClasses';
+import { runPromiseTask } from './utils/promiseTask';
 function App() {
   // Chạy các hàm ES6 khi App render lần đầu
   useEffect(() => {
-    runES6Exercises();
+    runArrayMethods();
+    runES6Functions();
+    runOOPClasses();
+    runPromiseTask();
   }, []);
   return (
     <div>
