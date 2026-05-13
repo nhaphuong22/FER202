@@ -1,0 +1,41 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  background-color: #4a4a4a;
+  color: white;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.navbar div {
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.nav-home { background-color: #3b9f71; }
+.nav-login { background-color: black; }
+
+/* Greeting Text */
+.hello-text { font-size: 2.5rem; font-family: Arial, sans-serif; }
+.react-text { color: blue; font-weight: bold; }
+
+/* React Logo Section */
+.logo-container {
+  text-align: center;
+  width: 350px;
+  margin-top: 20px;
+}
+.logo-line { border-top: 2px solid #00d8ff; margin: 10px 0; }
+.logo-caption { font-family: 'Brush Script MT', cursive; color: #2c3e50; font-size: 1.5rem; margin: 0; }
+.logo-sub { color: gray; font-style: italic; font-size: 0.9rem; margin-top: 5px; }
+
+/* JSX Text */
+.jsx-text {
+  color: blue;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 2px 0px 1px magenta, -2px 0px 1px cyan; 
+  font-family: Arial, sans-serif;
+}
+
+/* Retail Table */
+.retail-table { border-collapse: collapse; margin-top: 10px; }
+.retail-table td { border: 1px solid #ccc; padding: 8px 30px; text-align: center; }
