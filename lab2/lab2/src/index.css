@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #363636 !important;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Serif font style for headings and brand */
+.font-serif,
+.navbar-brand,
+.carousel-caption h1,
+.carousel-caption h2,
+.menu-title,
+.booking-title,
+.card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+/* Navbar overrides */
+.navbar {
+  background-color: #222222 !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #999999 !important;
+  font-size: 0.95rem;
+  margin-right: 15px;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Search bar styling */
+.navbar .form-control {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border-radius: 4px 0 0 4px !important;
+  border: none;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+
+.navbar .btn-search-red {
+  background-color: #b02a37 !important;
+  border: none;
+  border-radius: 0 4px 4px 0 !important;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar .btn-search-red:hover {
+  background-color: #901f29 !important;
+}
+
+/* Carousel / Hero Section */
+.carousel-item {
+  height: 500px;
+  background-color: #000000;
+}
+
+.carousel-item img {
+  opacity: 0.7;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  bottom: 35% !important;
+  text-align: center;
+}
+
+.carousel-caption h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+  font-size: 1.15rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #ff9800 !important;
+  opacity: 1;
+}
+
+/* Pizza Card styling */
+.pizza-card {
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: #333333 !important;
+}
+
+.pizza-card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.pizza-card img {
+  height: 230px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Absolute yellow badges matching image */
+.pizza-badge-yellow {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+  padding: 4px 14px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  border-radius: 0 !important;
+}
+
+.pizza-card .card-body {
+  padding: 20px !important;
+  background-color: #ffffff !important;
+}
+
+.pizza-card .card-title {
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 12px !important;
+  color: #2b2b2b !important;
+}
+
+.pizza-card-price-container {
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pizza-price-original {
+  text-decoration: line-through;
+  color: #777777;
+}
+
+.pizza-price-sale {
+  color: #ffa000 !important;
+  font-weight: bold;
+}
+
+.pizza-price-regular {
+  color: #777777;
+}
+
+/* Full-width dark buy button */
+.pizza-btn-buy {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.pizza-btn-buy:hover {
+  background-color: #23272b !important;
+}
+
+/* Booking Section */
+.booking-section-wrapper {
+  width: 100%;
+}
+
+.booking-section-wrapper .form-control,
+.booking-section-wrapper .form-select {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 4px !important;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+
+.booking-section-wrapper .form-control::placeholder {
+  color: #888888 !important;
+  opacity: 1;
+}
+
+.booking-section-wrapper .form-select {
+  color: #888888 !important;
+}
+
+.booking-section-wrapper .btn-send-message {
+  background-color: #ffc107 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.booking-section-wrapper .btn-send-message:hover {
+  background-color: #e0a800 !important;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 const FirstPage = () => {
   return (
     <div className="container-fluid p-0 text-center">
