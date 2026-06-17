@@ -39,9 +39,9 @@ export default class QuizApp extends Component {
         },
         {
           id: 5,
-          question: "Which country is home to the kangaroo?",
-          options: ["Australia", "South Africa", "Canada", "Austria"],
-          answer: "Australia",
+          question: "Phương có khùng không?",
+          options: ["Yes", "no", "may be", "i don't know"],
+          answer: "Yes",
         },
       ],
       currentQuestion: 0,
