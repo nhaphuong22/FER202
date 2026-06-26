@@ -1,22 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react';
+import { quizData } from '../data/quizData';
 
 export const QuizContext = createContext();
 
-const initialQuizData = [
-    {
-        question: 'What is ReactJS?',
-        answers: ['A JavaScript library for building user interfaces', 'A programming language', 'A database management system'],
-        correctAnswer: 'A JavaScript library for building user interfaces'
-    },
-    {
-        question: 'What is JSX?',
-        answers: ['A programming language', 'A file format', 'A syntax extension for JavaScript'],
-        correctAnswer: 'A syntax extension for JavaScript'
-    }
-];
-
 export const QuizProvider = ({ children }) => {
-    const [quizList, setQuizList] = useState(initialQuizData);
+    const [quizList, setQuizList] = useState(quizData);
     const [displayedQuestions, setDisplayedQuestions] = useState([]);
     const [selectedAnswers, setSelectedAnswers] = useState({});
     const [showResults, setShowResults] = useState(false);

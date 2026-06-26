@@ -3,9 +3,11 @@ export default function ValidatedInput({ onChange, validationFunction }) {
   const [value, setValue] = useState("");
   const [isValid, setIsValid] = useState(true);
   useEffect(() => {
+
     setIsValid(validationFunction(value));
   }, [value, validationFunction]);
   return (
+    
     <div>
       <input
         type="text"
@@ -13,6 +15,7 @@ export default function ValidatedInput({ onChange, validationFunction }) {
         onChange={(e) => setValue(e.target.value)}
         className={isValid ? "" : "error"}
       />
+      
       {!isValid && <p className="error-message">Invalid input</p>}
     </div>
   );
